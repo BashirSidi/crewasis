@@ -76,8 +76,6 @@ const styles = {
     imageBox: {
       justifyContent: 'center',
       textAlign: 'center',
-      border: '15px solid white',
-      height: '700px',
       display: 'inline-flex',
       mb: [0, null, -6, null, null, '-40px', null, -3],
       img: {
