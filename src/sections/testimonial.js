@@ -13,7 +13,7 @@ import Avatar4 from 'assets/testimonial/avatar4.png';
 const data = [
   {
     id: 1,
-    title: 'Modern look & trending design',
+    title: 'Idea One',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar1,
@@ -23,7 +23,7 @@ const data = [
   },
   {
     id: 2,
-    title: 'Design Quality & performance',
+    title: 'Idea Two',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar2,
@@ -33,7 +33,7 @@ const data = [
   },
   {
     id: 3,
-    title: 'Layout and organized layers',
+    title: 'Idea Three',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar3,
@@ -43,13 +43,23 @@ const data = [
   },
   {
     id: 4,
-    title: 'Modern look & trending design',
+    title: 'Idea Four',
+    description:
+      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+    avatar: Avatar4,
+    name: 'Denny Hilguston',
+    designation: '@denny.hil',
+    review: 4,
+  },
+  {
+    id: 5,
+    title: 'Idea Five',
     description:
       'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar4,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
-    review: 4,
+    review: 5,
   },
 ];
 
@@ -104,8 +114,8 @@ export default function TestimonialCard() {
    <section id="testimonial" sx={{variant: 'section.testimonial'}}>
      <Container css={{textAlign: 'center'}}>
        <SectionHeader
-        slogan="Testimonial"
-        title="Meet Client Satisfaction"
+        slogan="IDEA"
+        title="Our List Of Five Ideas"
        />
      </Container>
      <Box sx={styles.carouselWrapper}>
@@ -118,7 +128,7 @@ export default function TestimonialCard() {
               {item.title}
             </Heading>
             <Text sx={styles.description}>{item.description}</Text>
-            <div className="card-footer">
+            {/* <div className="card-footer">
               <div className="image">
                 <Image src={item.avatar} alt="Client Image"/>
               </div>
@@ -128,7 +138,7 @@ export default function TestimonialCard() {
                 {item.name}
               </Heading>
               <Text sx={styles.designation}>{item.designation}</Text>
-            </div>
+            </div> */}
           </Box>
         )))}
        </Carousel>

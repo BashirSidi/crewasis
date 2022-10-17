@@ -20,14 +20,14 @@ export default function IndexPage() {
         <Layout>
           <SEO title="NextJS Landing Page" />
           <Banner />
-          {/* <KeyFeature />
-          <ServiceSection />
-          <Feature />
-          <CoreFeature />
-          <WorkFlow />
-          <Package />
-          <TeamSection />
-          <TestimonialCard /> */}
+          {/* <KeyFeature /> */}
+          {/* <ServiceSection /> */}
+          {/* <Feature /> */}
+          {/* <CoreFeature /> */}
+          {/* <WorkFlow /> */}
+          {/* <Package /> */}
+          {/* <TeamSection /> */}
+          <TestimonialCard />
         </Layout>
     </ThemeProvider>
   );
