@@ -2,6 +2,7 @@
 import { jsx, Container, Heading, Text, Box, Image } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import Rating from 'components/rating';
+import Thump from 'components/Thump';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
 
@@ -45,7 +46,7 @@ const data = [
     id: 4,
     title: 'Idea Four',
     description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
     avatar: Avatar4,
     name: 'Denny Hilguston',
     designation: '@denny.hil',
@@ -109,21 +110,22 @@ const carouselParams = {
   slidesToSlide:1,
 }
 
-export default function TestimonialCard() {
+export default function Ideas() {
   return (
-   <section id="testimonial" sx={{variant: 'section.testimonial'}}>
-     <Container css={{textAlign: 'center'}}>
-       <SectionHeader
+  <section id="testimonial" sx={{variant: 'section.testimonial'}}>
+    <Container css={{textAlign: 'center'}}>
+      <SectionHeader
         slogan="IDEA"
         title="Our List Of Five Ideas"
-       />
-     </Container>
-     <Box sx={styles.carouselWrapper}>
+      />
+    </Container>
+    <Box sx={styles.carouselWrapper}>
 
-     <Carousel {...carouselParams}>
+    <Carousel {...carouselParams}>
         {data.map((item => (
           <Box sx={styles.reviewCard} key={item.sliderClass}>
-            <Rating rating={item.review}/>
+            {/* <Rating rating={item.review}/> */}
+            <Thump />
             <Heading as="h3" sx={styles.title} >
               {item.title}
             </Heading>
@@ -141,12 +143,12 @@ export default function TestimonialCard() {
             </div> */}
           </Box>
         )))}
-       </Carousel>
+      </Carousel>
 
 
       
-     </Box>
-   </section>
+    </Box>
+  </section>
   );
 }
 
